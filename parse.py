@@ -60,7 +60,7 @@ def main():
     parser.add_argument('evtx_filename', type=str)
     parser.add_argument('event_ids', type=int, nargs='+')
     args = parser.parse_args()
-    print parse_evtx(args.evtx_filename, [args.event_ids])
+    print parse_evtx(args.evtx_filename, args.event_ids)
 
 
 if __name__ == '__main__':
