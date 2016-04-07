@@ -1,6 +1,6 @@
 Evtx Info Extractor
 --------------------
-by @j84255801912
+A tool to extract informations of events related to certain event_id.
 
 ## Dependency
 ```
@@ -13,7 +13,9 @@ Use it as a module
 ```python
 from parse import parse_evtx
 
-parse_evtx('Test.evtx', [4624, 4625])
+# result is a list of tuples,
+# (event_id, time, ...)
+result = parse_evtx('Test.evtx', [4624, 4625])
 ```
 
 Use it as a script
@@ -23,3 +25,4 @@ $ python parse.py Test.evtx 4624 4625
 
 ## TODO
 * Support more informations.
+* Improve the performance.
