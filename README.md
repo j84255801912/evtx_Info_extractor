@@ -1,6 +1,7 @@
 Evtx Info Extractor
 --------------------
 A tool to extract informations of events related to certain event_id.
+by j84255801912@gmail.com
 
 ## Dependency
 ```
